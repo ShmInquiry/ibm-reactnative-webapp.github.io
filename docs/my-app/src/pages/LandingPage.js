@@ -2,10 +2,29 @@
 
 import React from "react";
 import { Link } from "react-router-dom";
+import backgroundImage from '../assets/backgroundImage.jpg';
 
  export default function LandingPage() {
+  console.log('LandingPage component rendered');
+
   return (
-    <div className="landing" style={{ textAlign: "center", padding: "2rem" }}>
+    <div className="page-container" style={{
+      backgroundColor: "#333", /* dark grey color */
+      height: "100vh",
+      width: "100vw",
+      overflow: "auto"
+    }}>
+    <div className="landing" style={{
+        textAlign: "center",
+        padding: "2rem",
+        backgroundImage: `url(${backgroundImage})`,
+        backgroundSize: "cover",
+        backgroundRepeat: "no-repeat",
+        height: "100vh",
+        width: "100vw",
+        justifyContent: "center",
+        alignItems: "center"
+       }}>
       <h1>Paradise Nursery</h1>
       <p>Welcome to your favorite houseplant store!</p>
       <Link to="/products">
@@ -13,6 +32,7 @@ import { Link } from "react-router-dom";
           Get Started
         </button>
       </Link>
+    </div>
     </div>
   );
  }
