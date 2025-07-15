@@ -2,7 +2,6 @@
 
 import React from "react";
 import { Link } from "react-router-dom";
-import backgroundImage from '../assets/backgroundImage.jpg';
 
  export default function LandingPage() {
   console.log('LandingPage component rendered');
@@ -14,26 +13,24 @@ import backgroundImage from '../assets/backgroundImage.jpg';
       width: "100vw",
       overflow: "auto"
     }}>
-    <div className="landing" style={{
-        textAlign: "center",
-        padding: "2rem",
-        backgroundImage: `url(${backgroundImage})`,
-        backgroundSize: "cover",
-        backgroundRepeat: "no-repeat",
-        height: "100vh",
-        width: "100vw",
-        justifyContent: "center",
-        alignItems: "center"
-       }}>
-      <h1>Paradise Nursery</h1>
-      <p>Welcome to your favorite houseplant store!</p>
-      <Link to="/products">
-        <button style={{ padding: "1rem 2rem", fontSize: "1rem" }}>
-          Get Started
-        </button>
-      </Link>
+    <div className="text-blur-wrapper">
+      <div className="landing">
+        <h1>Paradise Nursery</h1>
+        <p>Your Haven for Houseplants</p>
+        <Link to="/products">
+          <button style={{ padding: "1rem 2rem", fontSize: "1rem" }}>
+            Get Started
+          </button>
+        </Link>
+      </div>
+      <div className="description-container">
+          <p>Escape to a lush oasis and discover your new favorite houseplants at Paradise Nursery! As your go-to destination for all things green and growing, we're dedicated to helping you bring a touch of paradise into your home.
+  
+            Browse our curated selection of rare and unique houseplants, carefully handpicked to thrive in any environment. From low-maintenance succulents to vibrant flowering plants, our collection has something for every plant enthusiast.
+          </p>
+      </div>
     </div>
-    </div>
+  </div>
   );
  }
 //
@@ -48,4 +45,3 @@ import backgroundImage from '../assets/backgroundImage.jpg';
 //}
 
 //export default LandingPage;
-

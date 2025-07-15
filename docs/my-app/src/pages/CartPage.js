@@ -6,11 +6,11 @@ import { Link } from "react-router-dom";
 export default function CartPage() {
   const cart = useSelector((state) => state.cart.items);
 
-  const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
-  const totalCost = cart.reduce(
+  const totalItems = cart?.reduce((sum, item) => sum + item.quantity, 0) ?? 0;
+  const totalCost = cart?.reduce(
     (sum, item) => sum + item.quantity * item.price,
     0
-  );
+  ) ?? 0;
 
   return (
     <div>
@@ -18,10 +18,10 @@ export default function CartPage() {
       <p>Total Items: {totalItems}</p>
       <p>Total Cost: ${totalCost.toFixed(2)}</p>
 
-      {cart.length === 0 ? (
+      {cart?.length === 0 ? (
         <p>Your cart is empty.</p>
       ) : (
-        cart.map((item) => <CartItem key={item.id} item={item} />)
+        cart?.map((item) => <CartItem key={item.id} item={item} />)
       )}
 
       <div style={{ marginTop: "2rem" }}>

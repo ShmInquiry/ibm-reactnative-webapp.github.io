@@ -10,7 +10,7 @@ const ProductPage = () => {
         <div>
             <h1>Products</h1>
             <div className="product-list">
-                {products.map((product) => (
+                {products?.map((product) => (
                     <PlantCard key={product.id} product={product} />
                 ))}
             </div>
@@ -19,4 +19,3 @@ const ProductPage = () => {
 };
 
 export default ProductPage;
-
