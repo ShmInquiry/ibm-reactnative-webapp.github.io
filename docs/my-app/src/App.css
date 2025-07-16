@@ -155,25 +155,6 @@ button:hover {
   height: 2px;
 }
 
-.plant-card {
-  border: 1px solid #2E5902; /* Verde-2-hex */
-  border-radius: 8px;
-  padding: 16px;
-  margin: 16px;
-  text-align: left;
-  background-color: #D96941; /* Verde-4-hex */
-  transition: box-shadow 0.3s;
-}
-
-.plant-card:hover {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.plant-card img {
-  max-width: 100%;
-  border-radius: 4px;
-}
-
 .header {
   background-color: var(--text-color-saltrock-red); /* Verde-1-hex */
   padding: 10px;
@@ -243,3 +224,44 @@ button:hover {
   border-right: 2px solid var(--background-color);
 }
 
+.plant-card {
+  border: 1px solid #2E5902; /* Verde-2-hex */
+  border-radius: 8px;
+  padding: 16px;
+  margin: 16px;
+  text-align: left;
+  background-color: #D96941; /* Verde-4-hex */
+  transition: box-shadow 0.3s;
+}
+
+.plant-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.plant-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.product-list {
+  padding: 20px;
+}
+
+.product-list h1 {
+  margin-left: 20px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+/* 
+.product-grid img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+} */
