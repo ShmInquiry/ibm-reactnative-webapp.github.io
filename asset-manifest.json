@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/ibm-reactnative-webapp.github.io/static/css/main.75ef4d9d.css",
+    "main.js": "/ibm-reactnative-webapp.github.io/static/js/main.ff23d59c.js",
+    "static/js/453.96453769.chunk.js": "/ibm-reactnative-webapp.github.io/static/js/453.96453769.chunk.js",
+    "static/media/backgroundImage.jpg": "/ibm-reactnative-webapp.github.io/static/media/backgroundImage.26797086bb0f56536dc6.jpg",
+    "static/media/plant-sample-2.jpg": "/ibm-reactnative-webapp.github.io/static/media/plant-sample-2.7fb1f155fd2f0736859c.jpg",
+    "static/media/plant-sample-3.jpg": "/ibm-reactnative-webapp.github.io/static/media/plant-sample-3.b82a51273f119f11da32.jpg",
+    "static/media/plant-sample-5.jpg": "/ibm-reactnative-webapp.github.io/static/media/plant-sample-5.ac4cf2394a02c731e2f4.jpg",
+    "static/media/plant-sample-1.jpg": "/ibm-reactnative-webapp.github.io/static/media/plant-sample-1.ac74da8e4ed0ef9f6554.jpg",
+    "static/media/plant-sample-4.jpg": "/ibm-reactnative-webapp.github.io/static/media/plant-sample-4.a58c2c8cd0d8261a03ca.jpg",
+    "static/media/plant-sample-6.jpg": "/ibm-reactnative-webapp.github.io/static/media/plant-sample-6.7991f91ad86a6e452046.jpg",
+    "index.html": "/ibm-reactnative-webapp.github.io/index.html",
+    "main.75ef4d9d.css.map": "/ibm-reactnative-webapp.github.io/static/css/main.75ef4d9d.css.map",
+    "main.ff23d59c.js.map": "/ibm-reactnative-webapp.github.io/static/js/main.ff23d59c.js.map",
+    "453.96453769.chunk.js.map": "/ibm-reactnative-webapp.github.io/static/js/453.96453769.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.75ef4d9d.css",
+    "static/js/main.ff23d59c.js"
+  ]
+}
