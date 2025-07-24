@@ -8,7 +8,7 @@ export default function Header() {
   //   (state) => state.cart.items.reduce((sum, item) => sum + item.quantity, 0)
   // );
 
-  const cart = useSelector(state => state.cart.cart);
+  const cart = useSelector(state => state.cart.cartItems);
   const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
 
   return (

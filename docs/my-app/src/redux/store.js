@@ -1,24 +1,35 @@
-import { createStore, combineReducers } from 'redux';
+// import { createStore, combineReducers } from 'redux';
 
-const initialState = {
-  cart: []
-};
+// // const initialState = {
+// //   cart: []
+// // };
 
-const cartReducer = (state = initialState, action) => {
-  switch (action.type) {
-    case 'ADD_TO_CART':
-      return { ...state, cart: [...state.cart, action.product] };
-    case 'REMOVE_FROM_CART':
-      return { ...state, cart: state.cart.filter(product => product.id !== action.productId) };
-    default:
-      return state;
+// // const cartReducer = (state = initialState, action) => {
+// //   switch (action.type) {
+// //     case 'ADD_TO_CART':
+// //       return { ...state, cart: [...state.cart, action.product] };
+// //     case 'REMOVE_FROM_CART':
+// //       return { ...state, cart: state.cart.filter(product => product.id !== action.productId) };
+// //     default:
+// //       return state;
+// //   }
+// // };
+
+// // const rootReducer = combineReducers({
+// //   cart: cartReducer
+// // });
+
+// // const store = createStore(rootReducer);
+
+// // export default store;
+// src/redux/store.js
+import { configureStore } from '@reduxjs/toolkit';
+import cartReducer from './cartSlice';
+
+const store = configureStore({
+  reducer: {
+    cart: cartReducer
   }
-};
-
-const rootReducer = combineReducers({
-  cart: cartReducer
 });
-
-const store = createStore(rootReducer);
 
 export default store;

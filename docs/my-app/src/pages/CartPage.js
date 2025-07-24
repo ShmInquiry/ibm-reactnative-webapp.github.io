@@ -4,7 +4,9 @@ import CartItem from "../components/CartItem";
 import { Link } from "react-router-dom";
 
 export default function CartPage() {
-  const cart = useSelector((state) => state.cart.items);
+  // const cart = useSelector((state) => state.cart.items);
+  const cart = useSelector((state) => state.cart.cartItems);
+
 
   const totalItems = cart?.reduce((sum, item) => sum + item.quantity, 0) ?? 0;
   const totalCost = cart?.reduce(
@@ -13,8 +15,8 @@ export default function CartPage() {
   ) ?? 0;
 
   return (
-    <div>
-      <h2>Your Shopping Cart</h2>
+  <div className="cart-page-container">
+    <h2>Your Shopping Cart</h2>
       <p>Total Items: {totalItems}</p>
       <p>Total Cost: ${totalCost.toFixed(2)}</p>
 
@@ -38,4 +40,3 @@ export default function CartPage() {
     </div>
   );
 }
-

@@ -1,11 +1,11 @@
 :root {
-
   --text-color-saltrock-red: #D96941; /* Verde-4-hex */
   --background-color: #193C40; /* Verde-1-hex */
   --accessory-color-1-green: #2E5902; /* Verde-2-hex */
   --accessory-color-2-darkgreen: #214001; /* Verde-3-hex */
   --accent-color-darkred: #A62B1F; /* Verde-5-hex */
-
+  --card-background: #E6D5C3; /* soft beige */
+  
   --text-shadow: var(--accessory-color-2-darkgreen);
   --backdrop-filter: blur(10px); /* Blur the background */
 }
@@ -44,7 +44,7 @@ button:hover {
   text-shadow: var(--accessory-color-2-darkgreen);
   backdrop-filter: blur(10px); /* Blur the background */
   background-color: var(--accessory-color-1-green);
-  color: var(--text-color-saltrock-red);
+  color: var(--card-background);
   font-weight: bold;
   border-radius: 8px; /* Add this line to make the buttons rounded */
   padding: 8px 16px; /* Add some padding to make the button look nicer */
@@ -140,7 +140,7 @@ button:hover {
   width: 70vw;
   margin: 0 auto;
   position: relative;
-
+  font-weight: bold;
   box-shadow: var(--accent-color-darkred);
   text-shadow: var(--accessory-color-2-darkgreen);
 
@@ -187,8 +187,15 @@ button:hover {
   padding: 20px;
   background-color: #214001; /* Verde-3-hex */
 }
+.cart-page-container {
+  margin-left: 20px; /* add some indentation */
+  margin-right: 20px; /* add some indentation */
+  max-width: 800px; /* set a maximum width to prevent the page from stretching too far */
+  padding: 20px; /* add some padding to create some space between the content and the edges */
+}
 
 .cart-item {
+  padding: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -225,12 +232,15 @@ button:hover {
 }
 
 .plant-card {
-  border: 1px solid #2E5902; /* Verde-2-hex */
+  width: 200px; /* fixed width */
+  border: 1px solid var(--accessory-color-1-green); /* Verde-2-hex */
+  color: var(--background-color);
+  font-weight: bold;
   border-radius: 8px;
   padding: 16px;
   margin: 16px;
   text-align: left;
-  background-color: #D96941; /* Verde-4-hex */
+  background-color: var(--card-background); /* Verde-4-hex */
   transition: box-shadow 0.3s;
 }
 
@@ -240,7 +250,7 @@ button:hover {
 
 .plant-card img {
   width: 100%;
-  height: 150px;
+  height: 300px;
   object-fit: cover;
   border-radius: 10px;
 }

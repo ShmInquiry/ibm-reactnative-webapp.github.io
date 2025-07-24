@@ -21,4 +21,3 @@ function CartItem({ item, onRemove, onIncrease, onDecrease }) {
 }
 
 export default CartItem;
-
