@@ -263,6 +263,13 @@ button:hover {
   margin-left: 20px;
 }
 
+.product-list h2 {
+  font-size: 1.5rem;
+  border-bottom: 2px solid var(--accessory-color-1-green);
+  padding-bottom: 4px;
+  margin-left: 20px;
+}
+
 .product-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
