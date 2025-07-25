@@ -9,9 +9,6 @@ import backgroundImage from '../assets/backgroundImage.jpg';
 
   return (
     <div className="page-container" style={{
-      backgroundImage: `url(${backgroundImage})`,
-      backgroundSize: "cover",
-      backgroundRepeat: "no-repeat",
       backgroundColor: "#333", /* dark grey color */
       height: "100vh",
       width: "100vw",
