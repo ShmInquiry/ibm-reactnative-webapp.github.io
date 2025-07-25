@@ -105,7 +105,7 @@ button:hover {
   justify-content: space-between;
   align-items: center;
   height: 100vh;
-  background-image: url('%PUBLIC_URL%/assets/backgroundImage.jpg');
+  /* background-image: url('%PUBLIC_URL%/assets/backgroundImage.jpg'); */
   background-size: cover;
   background-repeat: no-repeat;
 }

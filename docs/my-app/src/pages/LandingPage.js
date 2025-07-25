@@ -6,9 +6,11 @@ import backgroundImage from '../assets/backgroundImage.jpg';
 
  export default function LandingPage() {
   console.log('LandingPage component rendered');
+  const backgroundImageUrl = `${process.env.PUBLIC_URL}/assets/backgroundImage.jpg`;
 
   return (
     <div className="page-container" style={{
+      backgroundImage: `url(${backgroundImageUrl})`,
       backgroundColor: "#333", /* dark grey color */
       height: "100vh",
       width: "100vw",
