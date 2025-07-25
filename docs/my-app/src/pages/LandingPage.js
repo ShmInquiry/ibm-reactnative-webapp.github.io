@@ -2,12 +2,14 @@
 
 import React from "react";
 import { Link } from "react-router-dom";
+import backgroundImage from '../assets/backgroundImage.jpg';
 
  export default function LandingPage() {
   console.log('LandingPage component rendered');
 
   return (
     <div className="page-container" style={{
+      backgroundImage: `url(${backgroundImage})`,
       backgroundColor: "#333", /* dark grey color */
       height: "100vh",
       width: "100vw",
