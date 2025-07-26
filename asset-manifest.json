@@ -1,22 +1,24 @@
 {
   "files": {
     "main.css": "/ibm-reactnative-webapp.github.io/static/css/main.06396ef7.css",
-    "main.js": "/ibm-reactnative-webapp.github.io/static/js/main.f625a530.js",
+    "main.js": "/ibm-reactnative-webapp.github.io/static/js/main.82db8128.js",
     "static/js/453.96453769.chunk.js": "/ibm-reactnative-webapp.github.io/static/js/453.96453769.chunk.js",
+    "static/media/app-logo-icon.png": "/ibm-reactnative-webapp.github.io/static/media/app-logo-icon.d3a8e125b54a5291de97.png",
     "static/media/backgroundImage.jpg": "/ibm-reactnative-webapp.github.io/static/media/backgroundImage.26797086bb0f56536dc6.jpg",
     "static/media/plant-sample-2.jpg": "/ibm-reactnative-webapp.github.io/static/media/plant-sample-2.7fb1f155fd2f0736859c.jpg",
     "static/media/plant-sample-3.jpg": "/ibm-reactnative-webapp.github.io/static/media/plant-sample-3.b82a51273f119f11da32.jpg",
     "static/media/plant-sample-5.jpg": "/ibm-reactnative-webapp.github.io/static/media/plant-sample-5.ac4cf2394a02c731e2f4.jpg",
     "static/media/plant-sample-1.jpg": "/ibm-reactnative-webapp.github.io/static/media/plant-sample-1.ac74da8e4ed0ef9f6554.jpg",
+    "static/media/cart-item.png": "/ibm-reactnative-webapp.github.io/static/media/cart-item.fc51de5f110efc631ddc.png",
     "static/media/plant-sample-4.jpg": "/ibm-reactnative-webapp.github.io/static/media/plant-sample-4.a58c2c8cd0d8261a03ca.jpg",
     "static/media/plant-sample-6.jpg": "/ibm-reactnative-webapp.github.io/static/media/plant-sample-6.7991f91ad86a6e452046.jpg",
     "index.html": "/ibm-reactnative-webapp.github.io/index.html",
     "main.06396ef7.css.map": "/ibm-reactnative-webapp.github.io/static/css/main.06396ef7.css.map",
-    "main.f625a530.js.map": "/ibm-reactnative-webapp.github.io/static/js/main.f625a530.js.map",
+    "main.82db8128.js.map": "/ibm-reactnative-webapp.github.io/static/js/main.82db8128.js.map",
     "453.96453769.chunk.js.map": "/ibm-reactnative-webapp.github.io/static/js/453.96453769.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.06396ef7.css",
-    "static/js/main.f625a530.js"
+    "static/js/main.82db8128.js"
   ]
 }
