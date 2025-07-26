@@ -62,9 +62,26 @@ export default function CartPage() {
   const handleIncrease = (id) => dispatch(increaseQuantity(id));
   const handleDecrease = (id) => dispatch(decreaseQuantity(id));
   const handleRemove = (id) => dispatch(removeFromCart(id));
+  const cartBackgroundImageUrl = `${process.env.PUBLIC_URL}/assets/cartBackgroundImage.png`;
 
   return (
-    <div className="cart-page-container">
+    <div style={{ position: 'relative', minHeight: '100vh', width: '100%' }}>
+
+<div
+      style={{
+        backgroundImage: `url(${cartBackgroundImageUrl})`,
+        backgroundColor: "#193C40",
+        backgroundSize: "cover",
+        backgroundRepeat: "no-repeat",
+        backgroundPosition: "center",
+        position: "fixed",
+        top: 0,
+        left: 0,
+        height: "100vh",
+        width: "100vw",
+        zIndex: -1,
+      }}
+    />
       <h2>Your Shopping Cart</h2>
       <p>Total Items: {totalItems}</p>
       <p>Total Cost: ${totalCost.toFixed(2)}</p>
@@ -95,5 +112,6 @@ export default function CartPage() {
         </button>
       </div>
     </div>
+
   );
 }

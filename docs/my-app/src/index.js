@@ -8,10 +8,14 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+const basename = process.env.NODE_ENV === 'production'
+  ? '/ibm-reactnative-webapp.github.io'
+  : '/';
+
 root.render(
   <React.StrictMode>
     <Provider store={store}>
-      <BrowserRouter basename="/ibm-reactnative-webapp.github.io"> {/* 👈 fix here */}
+      <BrowserRouter basename={basename}>
         <App />
       </BrowserRouter>
     </Provider>

@@ -11,7 +11,7 @@ import backgroundImage from '../assets/backgroundImage.jpg';
   return (
     <div className="page-container" style={{
       backgroundImage: `url(${backgroundImageUrl})`,
-      backgroundColor: "#333", /* dark grey color */
+      backgroundColor: "#193C40",
       height: "100vh",
       width: "100vw",
       overflow: "auto"
